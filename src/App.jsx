@@ -4,6 +4,7 @@
 import "./App.css";
 import Greeting from "./Greeting";
 import FavFood from "./FavFood";
+import CorrectTest from "./CorrectTest";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <h1>Hello, World!</h1>
       <Greeting />
       <FavFood />
+      <CorrectTest />
     </>
   );
 }
