@@ -5,6 +5,7 @@ import "./App.css";
 import Greeting from "./Greeting";
 import FavFood from "./FavFood";
 import CorrectTest from "./CorrectTest";
+import LoopTest from "./LoopTest";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Greeting />
       <FavFood />
       <CorrectTest />
+      <LoopTest />
     </>
   );
 }
