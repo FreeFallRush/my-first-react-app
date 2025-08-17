@@ -6,6 +6,7 @@ import Greeting from "./Greeting";
 import FavFood from "./FavFood";
 import CorrectTest from "./CorrectTest";
 import LoopTest from "./LoopTest";
+import TodoList from "./ToDo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FavFood />
       <CorrectTest />
       <LoopTest />
+      <TodoList />
     </>
   );
 }
