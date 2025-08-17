@@ -21,24 +21,13 @@ function App() {
       <CorrectTest />
       <LoopTest />
       <TodoList />
-      <Button
-        handleClick={handleButtonClick}
-        text="Click Me!"
-        color="blue"
-        fontSize={12}
-      />
+      <Button handleClick={handleButtonClick} />
       <Button
         handleClick={handleButtonClick}
         text="Don't Click Me!"
         color="red"
-        fontSize={12}
       />
-      <Button
-        handleClick={handleButtonClick}
-        text="Click Me!"
-        color="blue"
-        fontSize={20}
-      />
+      <Button handleClick={handleButtonClick} fontSize={20} />
     </>
   );
 }
