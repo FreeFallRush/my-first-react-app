@@ -18,9 +18,9 @@ function App() {
       <CorrectTest />
       <LoopTest />
       <TodoList />
-      <Button />
-      <Button />
-      <Button />
+      <Button text="Click Me!" color="blue" fontSize={12} />
+      <Button text="Don't Click Me!" color="red" fontSize={12} />
+      <Button text="Click Me!" color="blue" fontSize={20} />
     </>
   );
 }
