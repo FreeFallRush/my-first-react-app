@@ -10,8 +10,8 @@ import TodoList from "./ToDo";
 import Button from "./Button";
 
 function App() {
-  const handleButtonClick = () => {
-    window.location.href = "https://www.theguardian.com";
+  const handleButtonClick = (url) => {
+    window.location.href = url;
   };
   return (
     <>
@@ -21,13 +21,18 @@ function App() {
       <CorrectTest />
       <LoopTest />
       <TodoList />
-      <Button handleClick={handleButtonClick} />
       <Button
-        handleClick={handleButtonClick}
+        handleClick={() => handleButtonClick("https://www.theguardian.com")}
+      />
+      <Button
+        handleClick={() => handleButtonClick("https://www.theodinproject.com")}
         text="Don't Click Me!"
         color="red"
       />
-      <Button handleClick={handleButtonClick} fontSize={20} />
+      <Button
+        handleClick={() => handleButtonClick("https://www.youtube.com")}
+        fontSize={20}
+      />
     </>
   );
 }
