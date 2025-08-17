@@ -1,9 +1,19 @@
-function Button(props) {
+function Button({
+  text = "Click Me!",
+  color = "blue",
+  fontSize,
+  handleClick = 12,
+}) {
   const buttonStyle = {
-    color: props.color,
-    fontSize: props.fontSize + "px",
+    color: color,
+    fontSize: fontSize + "px",
   };
-  return <button style={buttonStyle}>{props.text}</button>;
+
+  return (
+    <button onClick={handleClick} style={buttonStyle}>
+      {text}
+    </button>
+  );
 }
 
 export default Button;
