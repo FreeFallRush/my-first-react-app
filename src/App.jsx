@@ -7,6 +7,7 @@ import FavFood from "./FavFood";
 import CorrectTest from "./CorrectTest";
 import LoopTest from "./LoopTest";
 import TodoList from "./ToDo";
+import Button from "./Button";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <CorrectTest />
       <LoopTest />
       <TodoList />
+      <Button />
+      <Button />
+      <Button />
     </>
   );
 }
