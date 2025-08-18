@@ -9,6 +9,7 @@ import LoopTest from "./LoopTest";
 import TodoList from "./ToDo";
 import Button from "./Button";
 import Person from "./Person";
+import CustomInput from "./CustomInput";
 
 function App() {
   const handleButtonClick = (url) => {
@@ -35,6 +36,8 @@ function App() {
         fontSize={20}
       />
       <Person />
+      <br />
+      <CustomInput />
     </>
   );
 }
