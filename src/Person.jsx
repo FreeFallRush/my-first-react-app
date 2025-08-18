@@ -9,9 +9,14 @@ function Person() {
     // setPerson(person);
 
     //GOOD PRACTICE -> creating a new object in which we copy the existing state values
-    const newPerson = { ...person, age: [person.age + 1] };
-    setPerson(newPerson);
+    // const newPerson = { ...person, age: [person.age + 1] };
+    // setPerson(newPerson);
+    console.log("in handleIncreaseAge (before setPerson call): ", person);
+    setPerson({ ...person, age: person.age + 1 });
+    console.log("in handleIncreaseAge (after setPerson call): ", person);
   };
+
+  console.log("during render: ", person);
 
   return (
     <>
