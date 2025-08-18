@@ -2,6 +2,8 @@ import { useState } from "react";
 
 function Person() {
   const [person, setPerson] = useState({ name: "John", age: 100 });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const handleIncreaseAge = () => {
     //BAD PRACTICE - won't work like this
@@ -23,6 +25,22 @@ function Person() {
       <h1>{person.name}</h1>
       <h2>{person.age}</h2>
       <button onClick={handleIncreaseAge}>Increase age</button>
+      <br />
+      <input
+        type="text"
+        placeholder="First Name"
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Last Name"
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+      />
+      <p>
+        First Name: {firstName} Last Name: {lastName}
+      </p>
     </>
   );
 }
