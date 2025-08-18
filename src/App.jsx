@@ -8,6 +8,7 @@ import CorrectTest from "./CorrectTest";
 import LoopTest from "./LoopTest";
 import TodoList from "./ToDo";
 import Button from "./Button";
+import Person from "./Person";
 
 function App() {
   const handleButtonClick = (url) => {
@@ -33,6 +34,7 @@ function App() {
         handleClick={() => handleButtonClick("https://www.youtube.com")}
         fontSize={20}
       />
+      <Person />
     </>
   );
 }
